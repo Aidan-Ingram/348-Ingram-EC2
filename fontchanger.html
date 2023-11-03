@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color and Border Control</title>
+    <style>
+        /* Style for the paragraph */
+        #color-paragraph {
+            border: 1px solid black; /* Initial border */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>EECS 348 Extra Credit Lab Two</h1>
+    <div>
+        <label for="color-input">Enter RGB Value for the Background (e.g., 255, 0, 0):</label>
+        <input type="text" id="color-input" placeholder="RGB Value"><br>
+        <label for="border-input">Border Width (in pixels):</label>
+        <input type="number" id="border-input" value="1"><br>
+        <label for="border-color-input">Enter RGB Value for the Border (e.g., 255, 0, 0):</label>
+        <input type="text" id="border-color-input" placeholder="RGB Value"><br>
+        <button onclick="changeColorAndBorder()">Change color!</button>
+    </div>
+    <div id="color-paragraph">
+        <p>Welcome to my second exercise! I'm Aidan.</p>
+    </div>
+
+    <script src="problemtwo.js"></script>
+</body>
+</html>
