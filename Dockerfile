@@ -1,3 +1,8 @@
-FROM php:7.4-apache
-COPY . /var/www/html/
-EXPOSE 80
+# Set the base image to use
+FROM gcc:latest
+# Copy the C program into the container
+COPY scorepossibilities.c .
+# Compile the C program
+RUN gcc -o scorepossibilities scorepossibilities.c
+# Set the command to run when the container starts
+CMD ["./scorepossibilities"]
